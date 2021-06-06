@@ -1,0 +1,8 @@
+.p-datatable-flex-scrollable,
+.p-datatable-flex-scrollable .p-datatable-scrollable-view,
+.p-datatable-flex-scrollable .p-datatable-scrollable-wrapper {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    height: 95%;
+}
