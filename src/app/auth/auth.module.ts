@@ -10,7 +10,7 @@ import {ToastModule} from 'primeng/toast';
 //#region components
 import { RegisterComponent } from './register/register.component';
 import { LoginComponent } from './login/login.component';
-
+import { EmptyToNullDirectiveDirective } from '../directives/empty-to-null-directive.directive';
 //#endregion components
 
 
@@ -18,6 +18,7 @@ import { LoginComponent } from './login/login.component';
   declarations: [
     LoginComponent,
     RegisterComponent,
+    EmptyToNullDirectiveDirective,
   ],
   exports: [
     LoginComponent,

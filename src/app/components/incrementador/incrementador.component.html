@@ -5,7 +5,13 @@
                 <i class="fa fa-minus"></i>
             </button>
             </span>
-                <input type="text" [(ngModel)]="progress" class="form-control" placeholder="Product name">
+                <input type="number"
+                    [ngClass]="{'is-invalid': progress > 100 || progress < 0}"
+                    (ngModelChange)="onChange($event)"
+                    [(ngModel)]="progress"
+                    class="form-control"
+                    placeholder="Product name"
+                >
             <span class="input-group-btn">
             <button [ngClass]="className" (click)="cambiarValor(+5)" type="button">
                 <i class="fa fa-plus"></i>

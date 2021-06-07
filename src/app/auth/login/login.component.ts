@@ -25,6 +25,7 @@ export class LoginComponent implements OnInit {
 
     logearse(): void {
         console.log(this.loginForm.value)
+        this.router.navigateByUrl('/dashboard')
     }
     //logearse(): void {
     //    console.log(this.loginForm.value)

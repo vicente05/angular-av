@@ -31,4 +31,15 @@ export class IncrementadorComponent {
         this.valorSalida.emit(this.progress);
     }
 
+    onChange(valor: number): void {
+        if (valor >= 100) {
+            this.progress = 100;
+        } else if ( valor <= 0) {
+            this.progress = 0
+        } else {
+            this.progress = valor;
+        }
+        this.valorSalida.emit(this.progress);
+    }
+
 }
